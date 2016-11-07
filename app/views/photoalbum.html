@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-offset-1 col-md-10 col-sm-6 col-xs-6">
+            <div class="panel panel-default">
+                <div class="panel-header h2 alert-success"> {{title}} <p class="pull-right" ng-if="query.length == 0">
+                    ilosc: {{pics.length}}</p>
+                </div>
+                <div class="panel-body">
+                    <!--<div class="container">-->
+                    <div class="row">
+                        <div class="form-group col-lg-4 row">
+                            <label class="col-lg-2 col-form-label">Sortuj:</label>
+                            <div class="col-lg-10">
+                                <select ng-model="order" ng-options="sort as sort.label for sort in sortType" class="form-control">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-offset-4 col-lg-4 ">
+                            <strong>Szukaj: </strong><input ng-model="query">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-offset-4 row" >
+                        <p ng-if="query.length > 0"><span class="glyphicon glyphicon-search"></span> Wyniki wyszukiwania dla:
+                            <strong>{{query}}</strong></p>
+                        <p ng-if="order"><span class="glyphicon glyphicon-sort-by-order"></span> Wyniki  ułożone:
+                            <strong>{{order.label}}</strong></p>
+                    </div>
+                    <div class="col-md-4" ng-repeat="p in pics | filter: query| orderBy: order.value">
+                        <figure>
+                            <h3 class="h3">{{p.title}}</h3>
+                            <img src="{{p.resource}}">
+                            <p class="text-center">{{p.date | date: 'dd MMMM yyyy'}}</p>
+                        </figure>
+                    </div>
+
+                    <!--</div>-->
+
+                </div>
+            </div>
+        </div>
