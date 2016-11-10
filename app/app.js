@@ -8,7 +8,7 @@ config([ '$routeProvider', function( $routeProvider) {
         templateUrl: 'views/photoalbum.html',
         controller: 'PhotoalbumCtrl'
       })
-      .when('/photo', {
+      .when('/photo/:id', {
         templateUrl: 'views/photo.html',
             controller: 'PhotoCtrl'
     })

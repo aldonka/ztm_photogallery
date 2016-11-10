@@ -4,8 +4,7 @@
 angular.module('myApp')
     .service('AlbumService', ['$http', function ($http) {
         function getAll(callback) {
-            return $http.get('resources/json/photos.json').then(function (response) {
-                console.log(" size : ", response.data.length);
+            return $http.get('resources/json/p2.json').then(function (response) {
                 callback(response.data);
 
             }, function (errResponse) {
@@ -16,21 +15,26 @@ angular.module('myApp')
 
         return {
             getPictures: function (callback) {
-                getAll(callback)
-                // $http.get('resources/json/photos.json').then(function(response){
-                //     console.log(" size : ", response.data.length);
-                //     callback(response.data);
-                //
-                // }, function (errResponse) {
-                //     console.log("Sth went wrong, photos 0 size : ", errResponse);
-                //     callback([]);
-                // });
+                getAll(callback);
             },
-            getPictureById: function (id, callback) {
+            getPicturesById: function (id, callback) {
+                return $http.get('resources/json/photos/p' + id + '.json').then(function (response) {
+                    callback(response.data);
+
+                }, function (errResponse) {
+                    console.log("Sth went wrong, photos 0 size : ", errResponse);
+                    callback([]);
+                });
+            },
+            getDataById: function (id, callback) {
                 var picArr = [];
                 getAll(function (data) {
                     picArr = data;
-                    callback(picArr[id]);
+                    var i;
+                    for (i = 0; i < picArr.length; i++) {
+                        if (picArr[i].id == id)
+                            callback(picArr[i]);
+                    }
                 });
             }
         }
