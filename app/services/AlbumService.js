@@ -4,7 +4,7 @@
 angular.module('myApp')
     .service('AlbumService', ['$http', function ($http) {
         function getAll(callback) {
-            return $http.get('resources/json/p2.json').then(function (response) {
+            return $http.get('resources/json/photos.json').then(function (response) {
                 callback(response.data);
 
             }, function (errResponse) {

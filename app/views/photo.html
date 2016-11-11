@@ -30,9 +30,9 @@
                         </div>
                     <div class="row">
                         <figure ng-if="details.photos.length > 0" class="col-xs-3 figure" ng-repeat="p in details.photos">
-                            <img ng-click="changeMainPic(p.resource)" class="figure-img img-fluid rounded img-responsive"
+                            <img ng-click="changeMainPic(p.resource)" class="figure-img img-fluid rounded img-responsive"/>
                                  ng-src="{{p.resource}}"/>
-                            <figcaption  class="figure-caption pull-right">{{p.takenDate}}</figcaption>
+                            <figcaption  class="figure-caption pull-right">{{p.takenDate | date: 'dd M yyyy' | weekName}}</figcaption>
                         </figure>
                         <alert class=" col-xs-12 alert alert-warning" ng-show="details.photos.length == 0"><strong>Brak
                             dodatkowych zdjęć do wyświetlenia</strong></alert>

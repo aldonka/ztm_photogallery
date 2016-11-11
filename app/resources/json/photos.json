@@ -4,12 +4,6 @@
     "resource": "resources/photos/planet2_1.png",
     "title": "planeta Ziemia",
     "description": "Trzecia, licząc od Słońca, oraz piąta pod względem wielkości planeta Układu Słonecznego. Pod względem średnicy, masy i gęstości jest to największa planeta skalista Układu Słonecznego. ",
-    "photos": [
-      "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjIiYqdiJ_QAhWCkiwKHQiEBXcQjRwIBw&url=http%3A%2F%2Fportal.delfinki.pl%2Fnauki-scisle%2Fkosmos%2Fziemia-i-mars%2F&psig=AFQjCNGvaDqNm9vvYQPBIgeYXfucJSIe9Q&ust=1478897383865162",
-      "http://comps.canstockphoto.pl/can-stock-photo_csp14745530.jpg",
-      "http://png.clipart.me/graphics/previews/158/planet-earth-sketched-doodle_158262986.jpg",
-      "http://cache3.asset-cache.net/xc/452093751.jpg?v=2&c=IWSAsset&k=2&d=G7eq_-yIQqJaGWya5C4tBR4mBmLGtnh4_wk1TM-xgempJn7x86JfiLDt9caNfWTq0"
-    ],
     "date": "2000-02-22"
   },
   {
@@ -17,7 +11,6 @@
     "resource": "resources/photos/planet4_1.png",
     "title": "planeta Neptun",
     "description": "Gazowy olbrzym, ósma, najdalsza od Słońca planeta w Układzie Słonecznym. Nazwa planety pochodzi od rzymskiego boga mórz Neptuna. Wśród planet Układu Słonecznego jest czwartą pod względem średnicy i trzecią pod względem masy.",
-    "photos": [],
     "date": "2002-02-12"
   },
   {
@@ -25,7 +18,6 @@
     "resource": "resources/photos/planet2_2.png",
     "title": "planeta Saturn",
     "description": "Gazowy olbrzym, szósta planeta Układu Słonecznego pod względem oddalenia od Słońca, druga po Jowiszu pod względem masy i wielkości. ",
-    "photos": [],
     "date": "2012-02-12"
   },
   {
@@ -33,7 +25,6 @@
     "resource": "resources/photos/planet3_1.png",
     "title": "planeta Merkury",
     "description": "Najmniejsza i najbliższa Słońcu planeta Układu Słonecznego. Jako planeta wewnętrzna znajduje się dla ziemskiego obserwatora zawsze bardzo blisko Słońca, dlatego jest trudna do obserwacji. Mimo to należy do planet widocznych gołym okiem i była znana już w starożytności. Merkurego dojrzeć można jedynie tuż przed wschodem lub tuż po zachodzie Słońca.",
-    "photos": [],
     "date": "2015-04-12"
   },
   {
@@ -41,7 +32,6 @@
     "resource": "resources/photos/planet3_2.png",
     "title": "planeta Uran",
     "description": "Gazowy olbrzym, siódma w kolejności od Słońca planeta Układu Słonecznego. Jest także trzecią pod względem wielkości i czwartą pod względem masy planetą naszego systemu. Nazwa planety pochodzi od Uranosa, który był bogiem i uosobieniem nieba w mitologii greckiej (klasyczna greka: Οὐρανός), ojcem Kronosa (Saturna) i dziadkiem Zeusa (Jowisza).",
-    "photos": [],
     "date": "2015-04-11"
   },
   {
@@ -49,7 +39,6 @@
     "resource": "resources/photos/planet3_3.png",
     "title": "planeta Pluton",
     "description": " Planeta karłowata, plutoid, najjaśniejszy obiekt pasa Kuipera. Został odkryty w 1930 roku przez amerykańskiego astronoma Clyde’a Tombaugha. Od odkrycia do 2006 roku Pluton oficjalnie był uznawany za dziewiątą planetę Układu Słonecznego. 24 sierpnia 2006 roku Międzynarodowa Unia Astronomiczna odebrała Plutonowi status planety, co oznacza, że Układ Słoneczny liczy 8 planet",
-    "photos": [],
     "date": "2016-02-12"
   }
 ]

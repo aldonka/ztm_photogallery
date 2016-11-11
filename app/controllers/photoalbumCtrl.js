@@ -5,7 +5,6 @@ angular.module('myApp')
             $scope.pics = pics;
         });
 
-        // console.log($scope.pics.length);
         $scope.title = "Galeria zdjeć";
         $scope.query = '';
         $scope.sortType = [
