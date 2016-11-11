@@ -1,0 +1,21 @@
+{
+  "tags": [
+    "planet",
+    "earth",
+    "2016"
+  ],
+  "photos": [
+    {
+      "resource":  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Reprocessed_Mariner_10_image_of_Mercury.jpg/220px-Reprocessed_Mariner_10_image_of_Mercury.jpg",
+      "takenDate": "2016-07-23"
+    },
+    {
+      "resource":  "http://i.iplsc.com/merkury-jest-druga-znana-nam-planeta-aktywna-geologicznie/0005YI7KH57K9NIJ-C122-F4.jpg",
+      "takenDate": "2016-07-24"
+    },
+    {
+      "resource":  "https://falkonidas.files.wordpress.com/2016/09/mercury.jpg?w=676"
+      "takenDate": "2016-07-24"
+    }
+  ]
+}

@@ -24,13 +24,17 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row"></div>
                     <div class="row">
-                        <strong class="col-xs-12">Zdjęcia:</strong>
-                        <figure ng-if="planet.photos.length > 0" class="col-xs-2" ng-repeat="p in planet.photos">
-                            <img ng-click="changeMainPic(p)" class="figure-img img-fluid rounded img-responsive"
-                                 ng-src="{{p}}"/>
+                        <strong class="col-xs-12">Zdjęcia:</strong><strong class="pull-right text-info">Liczba zdjęć: {{details.photos.length}}</strong>
+                        </div>
+                    <div class="row">
+                        <figure ng-if="details.photos.length > 0" class="col-xs-3 figure" ng-repeat="p in details.photos">
+                            <img ng-click="changeMainPic(p.resource)" class="figure-img img-fluid rounded img-responsive"
+                                 ng-src="{{p.resource}}"/>
+                            <figcaption  class="figure-caption pull-right">{{p.takenDate}}</figcaption>
                         </figure>
-                        <alert class=" col-xs-12 alert alert-warning" ng-show="planet.photos.length == 0"><strong>Brak
+                        <alert class=" col-xs-12 alert alert-warning" ng-show="details.photos.length == 0"><strong>Brak
                             dodatkowych zdjęć do wyświetlenia</strong></alert>
                     </div>
                 </div>

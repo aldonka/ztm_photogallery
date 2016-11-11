@@ -9,9 +9,8 @@ angular.module('myApp')
             $scope.planet = planet;
             $scope.mainPic = planet.resource;
         });
-AlbumService.getPicturesById($scope.id, function(photosOfPlanet){
-    $scope.photos = photosOfPlanet;
-    console.log($scope.photos.tags);
+AlbumService.getPicturesById($scope.id, function(detailsOfPlanet){
+    $scope.details = detailsOfPlanet;
 });
         $scope.changeMainPic = function (newMainPic) {
             $scope.mainPic = newMainPic;
