@@ -1,6 +1,6 @@
 'use strict';
 angular.module('myApp', [
-  'ngRoute', 'ngResource'
+  'ngRoute', 'ngResource', 'ngAnimate'
 ]).
 config([ '$routeProvider', function( $routeProvider) {
   $routeProvider
