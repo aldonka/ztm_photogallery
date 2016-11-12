@@ -1,10 +1,10 @@
 angular.module('myApp')
-    .controller('PhotoalbumCtrl', ['$scope', '$rootScope', 'AlbumService', function ($scope, $rootScope, AlbumService) {
+    .controller('PhotoalbumCtrl', ['$scope', '$rootScope', 'AlbumService', 'DetailsResource', function ($scope, $rootScope, AlbumService, DetailsResource) {
         $scope.pics = [];
-        AlbumService.getPictures(function (pics) {
-            $scope.pics = pics;
-        });
 
+        DetailsResource.getAll(function (response) {
+            $scope.pics = response;
+        });
         $scope.title = "Galeria zdjeć";
         $scope.query = '';
         $scope.sortType = [

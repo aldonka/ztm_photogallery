@@ -2,12 +2,15 @@
     <div class="row">
         <div class="col-lg-offset-1 col-md-10 col-sm-8 col-xs-8">
             <div class="panel panel-info">
-                <div class="panel-header h2 alert-info text-center "> {{planet.title}}<small class="pull-right ">
-                    {{planet.date |  date: 'dd MMMM yyyy'}}</small></div>
+                <div class="panel-header h2 alert-info text-center "> {{planet.title}}
+                    <small class="pull-right ">
+                        {{planet.date | date: 'dd MMMM yyyy'}}
+                    </small>
+                </div>
                 <div class="panel-body">
-                        <div>
-                            <span class="tag tag-info" ng-repeat="tag in photos.tags" >{{tag}}</span>
-                            </div>
+                    <div>
+                        <span class="tag tag-info" ng-repeat="tag in photos.tags">{{tag}}</span>
+                    </div>
 
                     <div class="row">
                         <div class="col-md-4">
@@ -26,13 +29,18 @@
                     </div>
                     <div class="row"></div>
                     <div class="row">
-                        <strong class="col-xs-12">Zdjęcia:</strong><strong class="pull-right text-info">Liczba zdjęć: {{details.photos.length}}</strong>
-                        </div>
+                        <strong class="col-xs-12">Zdjęcia:</strong><strong class="pull-right text-info">Liczba zdjęć:
+                        {{details.photos.length}}</strong>
+                    </div>
                     <div class="row">
-                        <figure ng-if="details.photos.length > 0" class="col-xs-3 figure" ng-repeat="p in details.photos">
-                            <img ng-click="changeMainPic(p.resource)" class="figure-img img-fluid rounded img-responsive"/>
+                        <figure ng-if="details.photos.length > 0" class="col-xs-3 figure"
+                                ng-repeat="p in details.photos">
+                            <img ng-click="changeMainPic(p.resource)"
+                                 class="figure-img img-fluid rounded img-responsive"
                                  ng-src="{{p.resource}}"/>
-                            <figcaption  class="figure-caption pull-right">{{p.takenDate | date: 'dd M yyyy' | weekName}}</figcaption>
+                            <figcaption class="figure-caption pull-right">{{p.takenDate | date: 'dd M yyyy' |
+                                weekName}}
+                            </figcaption>
                         </figure>
                         <alert class=" col-xs-12 alert alert-warning" ng-show="details.photos.length == 0"><strong>Brak
                             dodatkowych zdjęć do wyświetlenia</strong></alert>

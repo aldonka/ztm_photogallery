@@ -14,18 +14,6 @@ angular.module('myApp')
         }
 
         return {
-            getPictures: function (callback) {
-                getAll(callback);
-            },
-            getPicturesById: function (id, callback) {
-                return $http.get('resources/json/photos/p' + id + '.json').then(function (response) {
-                    callback(response.data);
-
-                }, function (errResponse) {
-                    console.log("Sth went wrong, photos 0 size : ", errResponse);
-                    callback([]);
-                });
-            },
             getDataById: function (id, callback) {
                 var picArr = [];
                 getAll(function (data) {
@@ -39,3 +27,19 @@ angular.module('myApp')
             }
         }
     }]);
+
+angular.module('myApp')
+    .value('PhotosPath', 'resources/json/photos/p:planetId.json')
+    .factory('DetailsResource', function ($resource, PhotosPath) {
+        return $resource(PhotosPath, {}, {
+            getPicturesById: {
+                method: 'GET',
+                params: {planetId: 1}
+            },
+            getAll: {
+                method: 'GET',
+                url: 'resources/json/photos.json',
+                isArray: true
+            }
+        })
+    });
