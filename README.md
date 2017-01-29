@@ -1,6 +1,6 @@
-# ZTM — Zaawansowane Technologie Mobilne
+# ZTW — Zaawansowane Technologie Webowe
 
-projekt z przemiotu Zaawansowane technologie mobilne na V rok Informatyki AGH EAIiIB
+projekt z przemiotu Zaawansowane technologie webowe na V rok Informatyki AGH EAIiIB
 
 ## lab 4 - Angular JS
 photogallery - using AngularJS + Html5
